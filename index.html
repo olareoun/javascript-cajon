@@ -1,0 +1,90 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link href='http://fonts.googleapis.com/css?family=Kite+One' rel='stylesheet' type='text/css'>
+    
+    <title>Play Cajon</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/cajon.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="../../assets/js/html5shiv.js"></script>
+      <script src="../../assets/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Custom styles for this template -->
+  </head>
+<!-- NAVBAR
+================================================== -->
+  <body>
+    <div class="container">
+        <div class="cajon">
+            <div class="row">
+                <div class="col-md-2 col-md-offset-4 cajon-piece cajon-top cajon-left">
+                    <div class="row">
+                        <div class="col-md-6 agudo-a"><img class="hit-control" src="img/fuerte.png" /></div>
+                        <div class="col-md-6 cajon-empty"><img class="hit-control" src="img/nothing.png" /></div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6 agudo-b"><img class="hit-control" src="img/flojo.png" /></div>
+                        <div class="col-md-6 cajon-empty"><img class="hit-control" src="img/nothing.png" /></div>
+                    </div>
+                </div>
+                <div class="col-md-2 cajon-piece cajon-top cajon-right">
+                    <div class="row">
+                        <div class="col-md-6 cajon-empty"><img class="hit-control" src="img/nothing.png" /></div>
+                        <div class="col-md-6 agudo-a"><img class="hit-control" src="img/fuerte.png" /></div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6 cajon-empty"><img class="hit-control" src="img/nothing.png" /></div>
+                        <div class="col-md-6 agudo-b"><img class="hit-control" src="img/flojo.png" /></div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-2 col-md-offset-4 cajon-piece cajon-left">
+                    <div class="grave-a"><img class="hit-control" src="img/fuerte.png" /></div>
+                    <div class="grave-b"><img class="hit-control" src="img/flojo.png" /></div>
+                </div>
+                <div class="col-md-2 cajon-piece cajon-right">
+                    <div class="grave-a"><img class="hit-control" src="img/fuerte.png" /></div>
+                    <div class="grave-b"><img class="hit-control" src="img/flojo.png" /></div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-2 col-md-offset-4 cajon-piece cajon-bottom cajon-left">
+                </div>
+                <div class="col-md-2 cajon-piece cajon-bottom cajon-right">
+                </div>
+            </div>
+        </div>        
+        <div class="row">
+            <div class="col-md-2 col-md-offset-4">
+                <button class="btn btn-lg btn-warning song-control" id="play_song">Play song</button>
+            </div>
+            <div class="col-md-2">
+                <button class="btn btn-lg btn-danger song-control" id="delete_song">Delete song</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="lib/vendor/jquery-1.8.2.min.js"></script>
+    <script src="lib/vendor/bootstrap.min.js"></script>
+    <script src="lib/vendor/mousetrap.min.js"></script>
+    <script src="lib/vendor/buzz.min.js"></script>
+    <script src="app/app.js"></script>
+  </body>
+  <script type="text/javascript">
+  </script>
+</html>

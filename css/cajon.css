@@ -1,0 +1,80 @@
+.cajon{
+	margin: 15px;
+}
+.cajon-piece{
+	background-color: #cc9933;
+	width: 200px;
+	height: 200px;
+	padding: 5px;
+	text-align: center;
+	vertical-align: middle;
+	border: 1px dotted brown;
+}
+
+.cajon-piece.cajon-top{
+	border-top-width: 20px;
+	border-top-color: brown;
+	border-top-style: double;
+}
+
+.cajon-piece.cajon-top.cajon-left{
+	border-top-left-radius: 2em;
+	text-align: left;
+}
+
+.cajon-piece.cajon-top.cajon-right{
+	border-top-right-radius: 2em;
+	text-align: right;
+}
+
+.cajon-piece.cajon-bottom.cajon-right{
+	border-bottom-right-radius: 2em;
+}
+
+.cajon-piece.cajon-bottom.cajon-left{
+	border-bottom-left-radius: 2em;
+}
+
+.cajon-piece.cajon-bottom{
+	border-bottom-width: 20px;
+	border-bottom-color: brown;
+	border-bottom-style: double;
+}
+
+.cajon-piece.cajon-right{
+	border-right-width: 20px;
+	border-right-color: brown;
+	border-right-style: double;
+}
+
+.cajon-piece.cajon-left{
+	border-left-width: 20px;
+	border-left-color: brown;
+	border-left-style: double;
+}
+
+.song-control{
+	padding: 15px;
+	margin: 15px;
+}
+
+/*.agudo-a, .grave-a{
+	background-image: url('../img/fuerte.png');
+	background-repeat: no-repeat;
+	width: 50px;
+	height: 50px;
+}
+
+.agudo-b, .grave-b{
+	background-image: url('../img/flojo.png');
+	background-repeat: no-repeat;
+	width: 50px;
+	height: 50px;
+}
+
+.cajon-empty{
+	background-image: url('../img/nothing.png');
+	background-repeat: no-repeat;
+	width: 50px;
+	height: 50px;
+}*/
