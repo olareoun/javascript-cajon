@@ -1,3 +1,11 @@
+body{
+	font-family: "Kite One";
+	font-size: 15px;
+}
+h1{
+	font-family: "Kite One";
+	font-size: 100px;
+}
 .cajon{
 	margin: 15px;
 }
@@ -78,3 +86,7 @@
 	width: 50px;
 	height: 50px;
 }*/
+
+.jumbotron{
+	text-align: center;
+	background-color: #cc9933;
