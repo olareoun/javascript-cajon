@@ -1,5 +1,6 @@
-lib/vendor/buzz.js
-sounds/PK*
-sounds/SN*
-sounds/Ree*
-sounds/*.wav
+public/lib/vendor/buzz.js
+public/sounds/PK*
+public/sounds/SN*
+public/sounds/Ree*
+public/sounds/*.wav
+Gemfile.lock
