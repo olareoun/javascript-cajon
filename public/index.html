@@ -13,6 +13,7 @@
     <!-- Bootstrap core CSS -->
     <link href="css/bootstrap.css" rel="stylesheet">
     <link href="css/cajon.css" rel="stylesheet">
+    <link href="css/app.css" rel="stylesheet">
 
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
@@ -31,63 +32,77 @@
         <p>Easily create cajón flamenco rithms and reproduce them.</p>
       </div>
     </div>
-    <div class="container">
-        <div class="row">
-            <div class="col-md-2 col-md-offset-4">
-                Strong Hit
-                <img src="img/fuerte.png" />
-            </div>
-            <div class="col-md-2">
-                Soft Hit
-                <img src="img/flojo.png" />
+    <div class="row">
+        <div class="col-md-2">
+            <div class="side-menu">
+                <label>Velocity</label>
+                <select id="speed">
+                    <option value="250">250</option>
+                    <option value="500">500</option>
+                    <option value="1000">1000</option>
+                </select>
             </div>
         </div>
-        <div class="cajon">
-            <div class="row">
-                <div class="col-md-2 col-md-offset-4 cajon-piece cajon-top cajon-left">
-                    <div class="row">
-                        <div class="col-md-6 agudo-a"><img class="hit-control" src="img/fuerte.png" /></div>
-                        <div class="col-md-6 cajon-empty"><img class="hit-control" src="img/nothing.png" /></div>
+        <div class="col-md-10">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-2 col-md-offset-4">
+                        Strong Hit
+                        <img src="img/fuerte.png" />
                     </div>
-                    <div class="row">
-                        <div class="col-md-6 agudo-b"><img class="hit-control" src="img/flojo.png" /></div>
-                        <div class="col-md-6 cajon-empty"><img class="hit-control" src="img/nothing.png" /></div>
-                    </div>
-                </div>
-                <div class="col-md-2 cajon-piece cajon-top cajon-right">
-                    <div class="row">
-                        <div class="col-md-6 cajon-empty"><img class="hit-control" src="img/nothing.png" /></div>
-                        <div class="col-md-6 agudo-a"><img class="hit-control" src="img/fuerte.png" /></div>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-6 cajon-empty"><img class="hit-control" src="img/nothing.png" /></div>
-                        <div class="col-md-6 agudo-b"><img class="hit-control" src="img/flojo.png" /></div>
+                    <div class="col-md-2">
+                        Soft Hit
+                        <img src="img/flojo.png" />
                     </div>
                 </div>
-            </div>
-            <div class="row">
-                <div class="col-md-2 col-md-offset-4 cajon-piece cajon-left">
-                    <div class="grave-a"><img class="hit-control" src="img/fuerte.png" /></div>
-                    <div class="grave-b"><img class="hit-control" src="img/flojo.png" /></div>
+                <div class="cajon">
+                    <div class="row">
+                        <div class="col-md-2 col-md-offset-4 cajon-piece cajon-top cajon-left">
+                            <div class="row">
+                                <div class="col-md-6 agudo-a"><img class="hit-control" src="img/fuerte.png" /></div>
+                                <div class="col-md-6 cajon-empty"><img class="hit-control" src="img/nothing.png" /></div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6 agudo-b"><img class="hit-control" src="img/flojo.png" /></div>
+                                <div class="col-md-6 cajon-empty"><img class="hit-control" src="img/nothing.png" /></div>
+                            </div>
+                        </div>
+                        <div class="col-md-2 cajon-piece cajon-top cajon-right">
+                            <div class="row">
+                                <div class="col-md-6 cajon-empty"><img class="hit-control" src="img/nothing.png" /></div>
+                                <div class="col-md-6 agudo-a"><img class="hit-control" src="img/fuerte.png" /></div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6 cajon-empty"><img class="hit-control" src="img/nothing.png" /></div>
+                                <div class="col-md-6 agudo-b"><img class="hit-control" src="img/flojo.png" /></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-2 col-md-offset-4 cajon-piece cajon-left">
+                            <div class="grave-a"><img class="hit-control" src="img/fuerte.png" /></div>
+                            <div class="grave-b"><img class="hit-control" src="img/flojo.png" /></div>
+                        </div>
+                        <div class="col-md-2 cajon-piece cajon-right">
+                            <div class="grave-a"><img class="hit-control" src="img/fuerte.png" /></div>
+                            <div class="grave-b"><img class="hit-control" src="img/flojo.png" /></div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-2 col-md-offset-4 cajon-piece cajon-bottom cajon-left">
+                            </div>
+                        <div class="col-md-2 cajon-piece cajon-bottom cajon-right">
+                        </div>
+                    </div>
+                </div>        
+                <div class="row">
+                    <div class="col-md-2 col-md-offset-4">
+                        <button class="btn btn-lg btn-warning song-control" id="play_song">Play song</button>
+                    </div>
+                    <div class="col-md-2">
+                        <button class="btn btn-lg btn-danger song-control" id="delete_song">Delete song</button>
+                    </div>
                 </div>
-                <div class="col-md-2 cajon-piece cajon-right">
-                    <div class="grave-a"><img class="hit-control" src="img/fuerte.png" /></div>
-                    <div class="grave-b"><img class="hit-control" src="img/flojo.png" /></div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-2 col-md-offset-4 cajon-piece cajon-bottom cajon-left">
-                </div>
-                <div class="col-md-2 cajon-piece cajon-bottom cajon-right">
-                </div>
-            </div>
-        </div>        
-        <div class="row">
-            <div class="col-md-2 col-md-offset-4">
-                <button class="btn btn-lg btn-warning song-control" id="play_song">Play song</button>
-            </div>
-            <div class="col-md-2">
-                <button class="btn btn-lg btn-danger song-control" id="delete_song">Delete song</button>
             </div>
         </div>
     </div>

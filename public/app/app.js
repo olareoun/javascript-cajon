@@ -1,5 +1,19 @@
 var song = [];
 
+var APP = (function(){
+
+    var ns = ns || {};
+
+    ns.velocity = 200;
+
+    ns.changeVelocity = function(newVelocity){
+        ns.velocity = newVelocity;
+    };
+
+    return ns;
+
+})(APP);
+
 var grave_alto = new buzz.sound( "sounds/grave-alto", {
     formats: [ "ogg" ]
 });
@@ -12,6 +26,10 @@ var agudo_alto = new buzz.sound( "sounds/agudo-alto", {
 var agudo_bajo = new buzz.sound( "sounds/agudo-bajo", {
     formats: [ "ogg" ]
 });
+
+$('#speed').change(function(){
+    APP.changeVelocity($(this).val());
+})
 
 $('.grave-a').click(function(){
     play_and_record(play_grave_alto);
@@ -68,7 +86,7 @@ var play_song = function(){
         if (song_copy.length == 0){
             window.clearInterval(songInterval);
         };
-    }, 200);
+    }, APP.velocity);
 };
 
 var delete_song = function(){
