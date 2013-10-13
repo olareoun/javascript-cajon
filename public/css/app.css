@@ -1,7 +1,29 @@
+body{
+	font-family: "Kite One";
+	font-size: 15px;
+	background-color: #D0C6B1;
+}
+
+h1{
+	font-family: "Kite One";
+	font-size: 100px;
+}
+
+.jumbotron{
+	text-align: center;
+	background-color: #333333;
+	color: #cc6600;
+}
+
 .side-menu{
 	padding: 25px;
 	width: 300px;
-	background-color: #cc9900;
+	background-color: #cc6600;
+	border-right-width: 5px;
+	border-right-color: #333333;
+	border-right-style: dotted;
+	border-top-right-radius: 2em;
+	border-bottom-right-radius: 2em;
 }
 
 label{
